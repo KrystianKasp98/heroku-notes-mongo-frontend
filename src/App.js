@@ -6,7 +6,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  console.log(process.env.HOST_API);
+  console.log(process.env.NODE_ENV);
   useEffect(() => {
     const main = async () => {
       const res = await api
