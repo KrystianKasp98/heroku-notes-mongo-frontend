@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-
+import config from './config';
 import api from "superagent";
 
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  console.log(process.env);
+  console.log(config.HOST);
   useEffect(() => {
     const main = async () => {
       const res = await api
